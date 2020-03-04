@@ -1,0 +1,98 @@
+body {
+    text-align: center;
+    background-color: #000000;
+    color: white;
+}
+
+table {
+    width: 23%;
+    border-collapse: collapse;
+    margin: 30px auto auto auto;
+}
+
+table, th, td {
+    border: 1px solid white;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 90px;
+}
+
+th {
+    font-size: 16pt;
+}
+
+label {
+    font-size: 19px;
+}
+
+
+input {
+    display: inline-block;
+    vertical-align: top;
+}
+
+input[type=text] {
+    border: solid #efefef;
+    border-width: 1px 0 1px 1px;
+    width: 50px;
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 14pt;
+    margin-right: 5px;
+
+}
+
+input[type=submit] {
+    border: 1px solid #000000;
+    background-color: #6a8873;
+    color: #fff;
+    width: 39px;
+    cursor: pointer;
+    padding: 4px;
+}
+
+input[type=button] {
+    border: 1px solid #000000;
+    background-color: #6f779a;
+    color: #fff;
+    cursor: pointer;
+    padding: 4px;
+}
+
+th:nth-child(2) {
+    width: 1%;
+    white-space: nowrap;
+    padding: 3px 9px;
+}
+
+tr:nth-child(1) {
+    border-bottom: 1px solid black;
+}
+
+th:nth-child(3) {
+    width: 1%;
+    white-space: nowrap;
+    padding: 3px 9px;
+}
+
+.guess {
+    font-size: 16pt;
+}
+
+.num {
+    letter-spacing: 20px;
+    padding: 5px;
+}
+
+div {
+    margin: 20px auto;
+    padding: 5px 8px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+#inputCell {
+    padding: 7px;
+}
