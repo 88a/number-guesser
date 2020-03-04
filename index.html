@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/main.css"/>
+    <script src="script/script.js"></script>
+</head>
+
+<h1>4 Digit Number Guesser</h1>
+
+<body>
+<div>
+    B = correct digit in correct position.<br>
+    C = correct digit in wrong position.
+</div>
+
+<table id="table">
+    <tr>
+        <td id="inputCell" colspan="3">
+            <label for="input">Input:</label>
+            <input type="text" id="input" name="input">
+            <input type="submit" value="Ok" onclick="guess()">
+            <input type="button" value="Restart" onclick="newGame()">
+        </td>
+
+    </tr>
+    <tr>
+        <th>Guess</th>
+        <th>B</th>
+        <th>C</th>
+    </tr>
+    <tr class="guess">
+        <td class="num">????</td>
+        <td>4</td>
+        <td>0</td>
+    </tr>
+</table>
+
+<script src="script/script.js"></script>
+</body>
+</html>
