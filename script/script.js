@@ -20,11 +20,14 @@ function guess() {
     if (/^\d+$/.test(input) && input.length == 4) {
         var b = 0;
         var c = 0;
+        var temp = "";
         for (var i = 0; i < secret.length; i++) {
             if (input.charAt(i) == secret.charAt(i))
                 b++;
-            else if (secret.indexOf(input.charAt(i)) > -1)
+            else if ((secret.indexOf(input.charAt(i)) > -1) && temp.indexOf(input.charAt(i)) == -1) {
+            	temp += input.charAt(i);
                 c++;
+            }
         }
 
         if (b == 4)
@@ -37,7 +40,7 @@ function guess() {
             insertRow(-1, input, b, c);
         }
     } else
-        alert("Input must be a 4 digit number");
+        alert("Input must be a 4 all different digit number");
 }
 
 function newGame() {
